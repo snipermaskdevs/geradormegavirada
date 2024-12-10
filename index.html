@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Mega da Virada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Mega da Virada</h1>
+        <p>Gere seus números aleatórios da Mega da Virada!</p>
+        <label for="quantidade">Quantos números você deseja gerar?</label>
+        <select id="quantidade">
+            <option value="6">6 Números</option>
+            <option value="7">7 Números</option>
+            <option value="8">8 Números</option>
+            <option value="9">9 Números</option>
+            <option value="10">10 Números</option>
+        </select>
+        <button onclick="gerarNumeros()">Gerar Números</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

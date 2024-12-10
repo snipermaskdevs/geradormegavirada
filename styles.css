@@ -1,0 +1,134 @@
+/* Estilos para o body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e7f4e4; /* Cor de fundo mais suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo do container */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+    width: 90%;
+    max-width: 500px; /* Tamanho máximo */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Efeito de transformação e sombra */
+}
+
+/* Efeito de hover no container */
+.container:hover {
+    transform: scale(1.05); /* Animação de aumento suave */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Estilo do título */
+h1 {
+    color: #4CAF50;
+    font-size: 2.5rem; /* Tamanho maior do título */
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif; /* Fonte diferente para o título */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição suave na cor e transformação */
+}
+
+/* Efeito no título */
+h1:hover {
+    color: #45a049; /* Mudança de cor no hover */
+    transform: scale(1.1); /* Aumento do título no hover */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px; /* Bordas mais arredondadas */
+    font-size: 18px; /* Tamanho maior da fonte */
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease; /* Transição suave para o botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Aumento do botão */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transition: all 0.3s ease-in-out; /* Efeito mais suave */
+}
+
+/* Estilo do resultado */
+#resultado {
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace; /* Fontes modernas */
+    letter-spacing: 1px; /* Maior espaçamento entre as letras */
+    opacity: 0; /* Inicialmente invisível */
+    animation: fadeIn 1s forwards; /* Animação para aparecer suavemente */
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo do select (dropdown) */
+select {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 220px; /* Largura ajustada */
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efeito no select */
+select:hover {
+    border-color: #4CAF50; /* Muda a borda ao passar o mouse */
+    box-shadow: 0 0 10px rgba(0, 200, 0, 0.3); /* Sombra no hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    #resultado {
+        font-size: 22px;
+    }
+
+    select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
